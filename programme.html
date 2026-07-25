@@ -1,11 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <title>AfriConnect Summit 2026 - Programme</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">AfriConnect Summit 2026</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Changer de thème">🌙</button>
+            <button id="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero -->
+        <section class="hero-interne">
+            <h1>Le progamme complet</h1>
+            <nav aria-label="fil d'ariane">
+                <a href="index.html">Accueil</a> &gt; <span>Programme</span>
+            </nav>
+        </section>
+
+          <section class="programme-tabs">
+            <h2>3 jours de conférence</h2>
+
+            <div class="tabs-buttons">
+                <button class="tab-btn active" data-jour="1">Jour 1</button>
+                <button class="tab-btn" data-jour="2">Jour 2</button>
+                <button class="tab-btn" data-jour="3">Jour 3</button>
+            </div>
+
+            <div class="tab-content active" id="jour-1">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Heure</th>
+                            <th>Session</th>
+                            <th>Intervenant</th>
+                            <th>Salle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09:00</td>
+                            <td>Ouverture officielle</td>
+                            <td>Fatou Ndiaye</td>
+                            <td>Salle A</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>L'IA en Afrique</td>
+                            <td>Omar Hassane</td>
+                            <td>Salle B</td>
+                        </tr>
+                          <tr>
+                            <td>11:30</td>
+                            <td>Pause café & networking</td>
+                            <td>—</td>
+                            <td>Hall principal</td>
+                          </tr>
+                          <tr>
+                            <td>13:00</td>
+                            <td>Investir dans la tech africaine</td>
+                            <td>Oumou Kalssoum Diallo</td>
+                            <td>Salle C</td>
+                          </tr>
+                          <tr>
+                            <td>15:00</td>
+                            <td>Fintech et inclusion financière</td>
+                            <td>Mamady Doumith</td>
+                            <td>Salle A</td>
+                          </tr>
+                    </tbody>
+                </table>
+            </div>
+
+ <div class="tab-content" id="jour-2">
+    <table>
+        <thead>
+            <tr>
+                <th>Heure</th>
+                <th>Session</th>
+                <th>Intervenant</th>
+                <th>Salle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00</td>
+                <td>Panel : Financer sa startup</td>
+                <td>Kwame Mensah</td>
+                <td>Salle A</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Design systems en 2026</td>
+                <td>Oumou Kalssoum Diallo</td>
+                <td>Salle B</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>Déjeuner networking</td>
+                <td>—</td>
+                <td>Hall principal</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Data & prise de décision</td>
+                <td>Fatou Ndiaye</td>
+                <td>Salle A</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Table ronde investisseurs</td>
+                <td>Omar Hassane</td>
+                <td>Salle C</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+      <div class="tab-content" id="jour-3">
+    <table>
+        <thead>
+            <tr>
+                <th>Heure</th>
+                <th>Session</th>
+                <th>Intervenant</th>
+                <th>Salle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00</td>
+                <td>Atelier : Lever des fonds en Afrique</td>
+                <td>Mamady Doumith</td>
+                <td>Salle A</td>
+            </tr>
+            <tr>
+                <td>10:30</td>
+                <td>Cybersécurité et souveraineté numérique</td>
+                <td>Omar Hassane</td>
+                <td>Salle B</td>
+            </tr>
+            <tr>
+                <td>12:00</td>
+                <td>Déjeuner networking</td>
+                <td>—</td>
+                <td>Hall principal</td>
+            </tr>
+            <tr>
+                <td>14:00</td>
+                <td>Success stories : entrepreneurs africains</td>
+                <td>Fatou Ndiaye</td>
+                <td>Salle A</td>
+            </tr>
+            <tr>
+                <td>16:00</td>
+                <td>Cérémonie de clôture</td>
+                <td>Kwame Mensah</td>
+                <td>Salle A</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+        </section>
+
+        <!-- ===== THÉMATIQUES ===== -->
+        <section class="thematiques">
+            <h2>Nos thématiques</h2>
+            <div class="thematiques-grid">
+                <article class="thematique-item">
+                    <i class="bi bi-cpu"></i>
+                    <h3>IA & Tech</h3>
+                    <p>Les innovations qui transforment le continent.</p>
+                </article>
+                <article class="thematique-item">
+                    <i class="bi bi-briefcase"></i>
+                    <h3>Business</h3>
+                    <p>Stratégies et opportunités d'investissement.</p>
+                </article>
+                <article class="thematique-item">
+                    <i class="bi bi-palette"></i>
+                    <h3>Design</h3>
+                    <p>Créativité et expérience utilisateur.</p>
+                </article>
+                <article class="thematique-item">
+                    <i class="bi bi-bar-chart"></i>
+                    <h3>Data</h3>
+                    <p>La donnée au service de la décision.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-col">
+            <h3>AfriConnect Summit</h3>
+            <p>Le rendez-vous annuel de la tech panafricaine.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Suivez-nous</h3>
+            <ul class="social-icons">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">&copy; <span id="year"></span> AfriConnect Summit</p>
+
+        <button id="back-to-top" aria-label="Retour en haut">↑</button>
+    </footer>
+    <script src="js/main.js"></script>
     
 </body>
 </html>

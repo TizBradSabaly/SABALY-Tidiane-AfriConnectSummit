@@ -1,11 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <title>AfriConnect Summit 2026 - Intervenants</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">AfriConnect Summit 2026</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" aria-label="Changer de thème">🌙</button>
+            <button id="hamburger" aria-label="Ouvrir le menu">☰</button>
+        </nav>
+    </header>
     
+    <main>
+        <!--  HERO INTERNE  -->
+        <section class="hero-interne">
+            <h1>Nos intervenants</h1>
+            <nav aria-label="Fil d'Ariane">
+                <a href="index.html">Accueil</a> &gt; <span>Intervenants</span>
+            </nav>
+        </section>
+
+        <!--  FILTRAGE DYNAMIQUE  -->
+        <section class="speakers-page">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="tous">Tous</button>
+                <button class="filter-btn" data-filter="ia-tech">IA & Tech</button>
+                <button class="filter-btn" data-filter="business">Business</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="data">Data</button>
+            </div>
+
+            <!--  GRILLE D'INTERVENANTS  -->
+            <div class="speakers-grid-full">
+                <article class="speaker-card" data-category="ia-tech">
+                    <img src="images/speaker1.jpg" alt="Photo de Fatou Ndiaye, intervenante">
+                    <h3>Fatou Ndiaye</h3>
+                    <p>CEO, TechAfrica</p>
+                    <p>Sénégal</p>
+                </article>
+
+                <article class="speaker-card" data-category="business">
+                    <img src="images/speaker2.jpg" alt="Photo de Kwame Mensah, intervenant">
+                    <h3>Kwame Mensah</h3>
+                    <p>Fondateur, DataGhana</p>
+                    <p>Ghana</p>
+                </article>
+                <article class="speaker-card" data-category="ia-tech">
+                    <img src="images/speaker2.jpg" alt="Photo de Youssouf Dione, intervenant">
+                    <h3>Youssouf Dione</h3>
+                    <p>Fondateur, DakarSupTech</p>
+                    <p>Sénégal</p>
+                </article>
+                <article class="speaker-card" data-category="data">
+                    <img src="images/speaker2.jpg" alt="Photo de Awa Demblé , intervenant">
+                    <h3>Awa Demblé</h3>
+                    <p>Analyste Data, InsightNaija</p>
+                    <p>Nigéria</p>
+                </article>
+                <article class="speaker-card" data-category="design">
+                    <img src="images/speaker2.jpg" alt="Photo de Williams Doupont, intervenant">
+                    <h3>Williams Doupont</h3>
+                    <p>Directeur Artistique, StudioBurkina</p>
+                    <p>Burkina Faso</p>
+                </article>
+       <article class="speaker-card" data-category="business">
+             <img src="images/speaker2.jpg" alt="Photo de Aminata Touré, intervenante">
+             <h3>Aminata Touré</h3>
+             <p>Directrice Investissement, PanAfrica Capital</p>
+             <p>Côte d'Ivoire</p>
+       </article>
+
+     <article class="speaker-card" data-category="design">
+    <img src="images/speaker2.jpg" alt="Photo de Jean-Marc Owona, intervenant">
+    <h3>Jean-Marc Owona</h3>
+    <p>Directeur Design, StudioKmer</p>
+    <p>Cameroun</p>
+    </article>
+
+      <article class="speaker-card" data-category="data">
+          <img src="images/speaker2.jpg" alt="Photo de Grace Mwangi, intervenante">
+          <h3>Grace Mwangi</h3>
+          <p>Data Scientist, KenyaInsights</p>
+          <p>Kenya</p>
+    </article>
+
+<article class="speaker-card" data-category="business">
+    <img src="images/speaker2.jpg" alt="Photo de Idris Bello, intervenant">
+    <h3>Idris Bello</h3>
+    <p>CEO, LagosVentures</p>
+    <p>Nigéria</p>
+</article>                    
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-col">
+            <h3>AfriConnect Summit</h3>
+            <p>Le rendez-vous annuel de la tech panafricaine.</p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Liens rapides</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Suivez-nous</h3>
+            <ul class="social-icons">
+                <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <p class="copyright">&copy; <span id="year"></span> AfriConnect Summit</p>
+
+        <button id="back-to-top" aria-label="Retour en haut">↑</button>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
