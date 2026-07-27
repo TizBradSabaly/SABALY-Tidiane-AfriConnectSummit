@@ -524,3 +524,81 @@ tbody tr:nth-child(even) {
 .speakers-page {
     padding: var(--spacing-xl) var(--spacing-lg);
 }
+
+/* Page Contact */
+
+.contact-section {
+    display: flex;
+    gap: var(--spacing-xl);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.registration-form {
+    flex:2 ;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+}
+.accordion-toggle {
+    display: none;
+}
+
+.accordion-header {
+    display: block;
+    padding: var(--spacing-md);
+    background-color: rgba(232, 93, 60, 0.05);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 var(--spacing-md);
+}
+
+.accordion-toggle:checked ~ .accordion-content {
+    max-height:200px;
+    padding: var(--spacing-md);
+}
+
+.map-section {
+    padding: var(--spacing-xl) var(--spacing-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.map-section h2 {
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.map-section iframe {
+    width: 100%;
+    border-radius: var(--radius-lg);
+}
