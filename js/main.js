@@ -20,3 +20,32 @@ themeToggle.addEventListener("click", () => {
         localStorage.setItem("theme", "dark");
     }
 });
+
+// Navbar dynamique au scroll
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 80) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+// Bouton back-to-top
+const backToTop = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        backToTop.style.display = "block";
+    } else {
+        backToTop.style.display = "none";
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
